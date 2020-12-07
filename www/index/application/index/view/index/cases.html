@@ -1,0 +1,33 @@
+{include file="index@tpl/header" /}
+
+<div class="_pc">
+    <div id="page_type_container" class="page_header_bg _pc">
+        <div class="page_inner_container">
+            <div class="page_title">
+                <div class="_title font-60-vw font-montserrat-b">Case</div>
+            </div>
+            <div class="cases_lists_container">
+                {$casespc}
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="_mobile">
+    <div id="mobile_page_type_container" class="yellow_top_bg">
+        <div class="page_inner_container_for_mobile">
+            <div class="_title_layout font-50-vw" style="margin-top: 25px">Case</div>
+        </div>
+        <!-- 移动端type案例展示 -->
+        <div class="type_case_groups">
+            <div class="page_inner_container_for_mobile">
+                <!-- 类移动端type案例展示 -->
+                <div class="many_cards_mix_show_container">
+                    {$casesmb}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{include file="index@tpl/footer" /}

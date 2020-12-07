@@ -1,0 +1,183 @@
+{include file="index@tpl/header" /}
+
+<body>
+<div class="container-scroller">
+
+    {include file="index@tpl/top" /}
+
+    <div class="container-fluid page-body-wrapper">
+        <div class="row row-offcanvas row-offcanvas-right">
+
+            {include file="index@tpl/left" /}
+
+            <div class="content-wrapper">
+                <div class="row">
+                    <!--电脑端标题背景图-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <h4 class="card-title">电脑端标题背景图 1920x650</h4>
+
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="img1"></div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mt-5 align-items-top">
+                                    <img src="__STATIC__/images/faces/pross.jpg" class="img-sm rounded-circle mr-3"
+                                         alt="image">
+                                    <div class="mb-0 flex-grow">
+                                        <p class="font-weight-bold mr-2 mb-0">ProSS 说：</p>
+                                        <p>注意标注的图片比例哦！</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--移动端标题背景图-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">移动端标题背景图 750x566</h4>
+
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="img2"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--共用背景图-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">共用背景图 998x625</h4>
+
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="img3"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--PC端合作背景图-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">PC端合作背景图 1920x650</h4>
+
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="img4"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--移动端合作背景图-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">移动端合作背景图 750x566</h4>
+
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="img5"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--PC端合作介绍背景图-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">PC端合作介绍背景图 1920x1066</h4>
+
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="img6"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--移动端合作介绍背景图-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">移动端合作介绍背景图 750x1158</h4>
+
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="img7"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{include file="index@tpl/js" /}
+
+<script type="text/javascript">
+    new DragImgUpload("#img1", "__IMG__/images/about_header.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("about_header", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#img2", "__IMG__/images/a_bg.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("a_bg", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#img3", "__IMG__/images/about_1.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("about_1", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#img4", "__IMG__/images/c_h_1.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("c_h_1", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#img5", "__IMG__/images/b_bg.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("b_bg", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#img6", "__IMG__/images/service_bg.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("service_bg", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#img7", "__IMG__/images/a_bg_2.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("a_bg_2", file, "__ADMIN__/change");
+        }
+    });
+</script>
+</body>
+</html>

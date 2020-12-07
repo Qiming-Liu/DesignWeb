@@ -1,0 +1,106 @@
+{include file="index@tpl/header" /}
+
+<body>
+<div class="container-scroller">
+
+    {include file="index@tpl/top" /}
+
+    <div class="container-fluid page-body-wrapper">
+        <div class="row row-offcanvas row-offcanvas-right">
+
+            {include file="index@tpl/left" /}
+
+            <div class="content-wrapper">
+                <div class="row">
+                    <!--01-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">1</h4>
+
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="img1"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--02-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">2</h4>
+
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="img2"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--03-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">3</h4>
+
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="img3"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--04-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <div class="d-flex mt-5 align-items-top">
+                                    <img src="__STATIC__/images/faces/pross.jpg" class="img-sm rounded-circle mr-3"
+                                         alt="image">
+                                    <div class="mb-0 flex-grow">
+                                        <p class="font-weight-bold mr-2 mb-0">ProSS 说：</p>
+                                        <p>轮播图参考分辨率为1550x797。</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{include file="index@tpl/js" /}
+
+<script type="text/javascript">
+    new DragImgUpload("#img1","__IMG__/images/indexlunbo1.jpg",{
+        callback:function (files) {
+            var file = files[0];
+            imgUpload("indexlunbo1", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#img2", "__IMG__/images/indexlunbo2.jpg",{
+        callback:function (files) {
+            var file = files[0];
+            imgUpload("indexlunbo2", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#img3", "__IMG__/images/indexlunbo3.jpg",{
+        callback:function (files) {
+            var file = files[0];
+            imgUpload("indexlunbo3", file, "__ADMIN__/change");
+        }
+    });
+</script>
+</body>
+</html>

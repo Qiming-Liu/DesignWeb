@@ -1,0 +1,39 @@
+{include file="index@tpl/header" /}
+<body style="background: #FFF">
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper">
+      <div class="row">
+        <div class="content-wrapper full-page-wrapper d-flex align-items-center auth-pages">
+          <div class="card col-lg-4 mx-auto">
+            <div class="card-body px-5 py-5">
+              <img src="__STATIC__/images/logo.png" alt="logo"/>
+              <h3 class="card-title text-left mb-3" style="margin-top: 20px">后台登录</h3>
+              <form method="post" action="__ADMIN__/index/login">
+                <div class="form-group">
+                  <label>账号 *</label>
+                  <input name="zh" type="text" class="form-control p_input">
+                </div>
+                <div class="form-group">
+                  <label>密码 *</label>
+                  <input name="mm" type="password" class="form-control p_input">
+                </div>
+                <div class="form-group">
+                  <label>验证 *</label>
+                  <input name="yz" type="text" class="form-control p_input">
+                  <img onclick="this.src='{:captcha_src()}?'+Math.random()" src="{:captcha_src()}" alt="captcha" />
+                </div>
+                <div class="d-flex" style="margin-top: 20px">
+                  <button type="submit" class="btn btn-gradient-warning btn-rounded btn-block enter-btn">登录</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+      </div>
+      <!-- row ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+
+  {include file="index@tpl/footer" /}

@@ -1,0 +1,67 @@
+{include file="index@tpl/header" /}
+<div class="_pc">
+    <div id="case_detail_container">
+        <!-- 案列详情头部 -->
+        <div class="detail_header_container">
+            <div class="the_box">
+                <div class="dh_image skrollable skrollable-between" data-0="background-position-y:0px;"
+                     data-top-bottom="background-position-y:-70px;"
+                     style="background-image: url('__STATIC__/images/{$src}.jpg'); background-position-y: 0px;">
+                </div>
+                <div class="case_info">
+                    <p class="_title font-35-vw go_up animated" style="transition-delay: 0.1s;">{$db.title}&nbsp;{$db.style}</p>
+                    <div class="_mix_text font-14-vw go_up animated" style="transition-delay: 0.11s;">
+                        <span>{$db.date}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="_icon_map fdj"></i>&nbsp;&nbsp;&nbsp;
+                        <span>{$db.visit}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>{$db.sign}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 案例详情内容 -->
+        <div class="detail_main_content_container">
+            <div class="dmc_main_body">
+                <!-- 案列图文混排 -->
+                <div class="case_mix_content_container font-14-vw" id="case_mix_content_container">
+
+                    {$db.content}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="_mobile">
+    <div id="mobile_case_details_container">
+        <!-- 移动端详情页大图 -->
+        <div class="detail_big_show4mobile">
+            <div class="fixed_box_with_image">
+                <div class="_inner_img_box"
+                     style="background-image:url('__STATIC__/images/{$src}.jpg');">
+                </div>
+                <div class="_img_info_text">
+                    <div class="__text_body font-38-vw">
+                        <p class="en">{$db.title}</p>
+                        <p class="cn">{$db.style}</p>
+                        <p class="font-18-vw other_info">
+                            <span>{$db.date}</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <span class="like_point4mobile white">{$db.visit}</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <span>{$db.sign}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 移动端详情图文布局 -->
+        <div class="case_text_image_container sign_to_show">
+            <!-- 类移动端详情图文布局 -->
+            <div class="full_size_image_with_text_layout font-20-vw" id="the_detail_contents4mobile" style="padding: 15px">
+
+                {$db.content}
+
+            </div>
+        </div>
+    </div>
+</div>
+{include file="index@tpl/footer" /}

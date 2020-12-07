@@ -1,0 +1,273 @@
+{include file="index@tpl/header" /}
+
+<body>
+<div class="container-scroller">
+
+    {include file="index@tpl/top" /}
+
+    <div class="container-fluid page-body-wrapper">
+        <div class="row row-offcanvas row-offcanvas-right">
+
+            {include file="index@tpl/left" /}
+
+            <div class="content-wrapper">
+                <div class="row">
+                    <!--01-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">fronter</h4>
+
+                                <div class="d-flex mt-5 align-items-top">
+                                    <img src="__STATIC__/images/faces/pross.jpg" class="img-sm rounded-circle mr-3"
+                                         alt="image">
+                                    <div class="mb-0 flex-grow">
+                                        <p class="font-weight-bold mr-2 mb-0">ProSS 说：</p>
+                                        <p>图片请尽量与原有图片比例保持一致。</p>
+                                    </div>
+                                </div>
+
+                                <h5 class="card-title" style="margin-top: 20px">01</h5>
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="imga1"></div>
+                                    </div>
+                                    <div class="col-6 pr-1">
+                                        <div id="imga2"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--02-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">fronter</h4>
+
+                                <h5 class="card-title" style="margin-top: 20px">02</h5>
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="imgb1"></div>
+                                    </div>
+                                    <div class="col-6 pr-1">
+                                        <div id="imgb2"></div>
+                                    </div>
+                                    <div class="col-6 pr-1" style="margin-top: 20px">
+                                        <div id="imgb3"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--03-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">fronter</h4>
+
+
+                                <h5 class="card-title" style="margin-top: 20px">03</h5>
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="imgc1"></div>
+                                    </div>
+                                    <div class="col-6 pr-1">
+                                        <div id="imgc2"></div>
+                                    </div>
+                                    <div class="col-6 pr-1" style="margin-top: 20px">
+                                        <div id="imgc3"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--04-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">fronter</h4>
+
+                                <h5 class="card-title" style="margin-top: 20px">04</h5>
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="imgd1"></div>
+                                    </div>
+                                    <div class="col-6 pr-1">
+                                        <div id="imgd2"></div>
+                                    </div>
+                                    <div class="col-6 pr-1" style="margin-top: 20px">
+                                        <div id="imgd3"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--05-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">fronter</h4>
+
+                                <h5 class="card-title" style="margin-top: 20px">05</h5>
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="imge1"></div>
+                                    </div>
+                                    <div class="col-6 pr-1">
+                                        <div id="imge2"></div>
+                                    </div>
+                                    <div class="col-6 pr-1" style="margin-top: 20px">
+                                        <div id="imge3"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--06-->
+                    <div class="col-lg-6 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">fronter</h4>
+
+                                <h5 class="card-title" style="margin-top: 20px">06</h5>
+                                <div class="row mt-3">
+                                    <div class="col-6 pr-1">
+                                        <div id="imgf1"></div>
+                                    </div>
+                                    <div class="col-6 pr-1">
+                                        <div id="imgf2"></div>
+                                    </div>
+                                    <div class="col-6 pr-1" style="margin-top: 20px">
+                                        <div id="imgf3"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{include file="index@tpl/js" /}
+
+<script type="text/javascript">
+    new DragImgUpload("#imga1", "__IMG__/images/beauty_001.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_001", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#imga2", "__IMG__/images/beauty_002.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_002", file, "__ADMIN__/change");
+        }
+    });
+
+    new DragImgUpload("#imgb1", "__IMG__/images/beauty_003.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_003", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#imgb2", "__IMG__/images/beauty_004.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_004", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#imgb3", "__IMG__/images/beauty_005.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_005", file, "__ADMIN__/change");
+        }
+    });
+
+    new DragImgUpload("#imgc1", "__IMG__/images/beauty_006.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_006", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#imgc2", "__IMG__/images/beauty_007.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_007", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#imgc3", "__IMG__/images/beauty_008.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_008", file, "__ADMIN__/change");
+        }
+    });
+
+    new DragImgUpload("#imgd1", "__IMG__/images/beauty_009.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_009", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#imgd2", "__IMG__/images/beauty_010.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_010", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#imgd3", "__IMG__/images/beauty_011.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_011", file, "__ADMIN__/change");
+        }
+    });
+
+    new DragImgUpload("#imge1", "__IMG__/images/beauty_012.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_012", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#imge2", "__IMG__/images/beauty_013.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_013", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#imge3", "__IMG__/images/beauty_014.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_014", file, "__ADMIN__/change");
+        }
+    });
+
+    new DragImgUpload("#imgf1", "__IMG__/images/beauty_015.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_015", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#imgf2", "__IMG__/images/beauty_016.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_016", file, "__ADMIN__/change");
+        }
+    });
+    new DragImgUpload("#imgf3", "__IMG__/images/beauty_017.jpg", {
+        callback: function (files) {
+            var file = files[0];
+            imgUpload("beauty_017", file, "__ADMIN__/change");
+        }
+    });
+</script>
+</body>
+</html>

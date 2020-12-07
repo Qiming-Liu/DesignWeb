@@ -1,0 +1,159 @@
+@charset "utf-8";
+html,body,div,span,p,a,img,ul,li,form,table,tbody,tr,th,td{margin:0;padding:0;border:0;outline:0;}
+body,input,textarea,select,button{font-synthesis:none;-moz-font-feature-settings:'kern';-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;direction:ltr;text-align:left}
+html * {-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;box-sizing:border-box;}
+body,html{font-family:'playfair_regular',Arial,'PingFangSC-Regular','微软雅黑','Microsoft YaHei','Helvetica',sans-serif;-webkit-tap-highlight-color:transparent;background-color:#fff;color:#000;-webkit-text-size-adjust:100%;font:14px;line-height:1.4286;font-weight:300;}
+li{list-style-type:none;}
+img{border:none;}
+a{text-decoration:none;color:inherit;cursor:pointer;}
+a:active{cursor:pointer;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+input,select{outline:none;-webkit-appearance:none;border:0;}
+button{background:none;border:0;outline:none;font-family:Arial,'PingFang','Helvetica',sans-serif;}
+.fl{float:left;}
+.fr{float:right;}
+.clear{content:'\0020';display:block;height:0;clear:both;}.fl{float:left;}.fr{float:right;}
+.clear_new::after{clear:both;display:block;content:'';width:0;}
+.justify_fixed::after{content:'';width:100%;height:0;overflow:hidden;display:inline-block;}
+.wrapper::before{content:'';display:inline-block;height:100%;vertical-align:middle;}
+.font_strsub{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.table_father{display:table;width:100%;height:100%;}
+.table_father > .table_child{display:table-cell;width:100%;height:100%;vertical-align:middle;}
+.force_3d{-webkit-transform:translateZ(0);transform:translateZ(0);}
+
+/* 通用配置 */
+.font_xs{font-size:14px;}
+.font_sm{font-size:18px;}
+.font_md{font-size:20px;}
+.font_lg{}
+.font_xl{font-size:38px;}
+
+.font-0{font-size:0;}
+
+.font-13{font-size:13px;}
+.font-14{font-size:14px;}
+.font-15{font-size:15px;}
+.font-16{font-size:16px;}
+.font-17{font-size:17px;}
+.font-18{font-size:18px;}
+.font-19{font-size:19px;}
+.font-20{font-size:20px;}
+.font-21{font-size:21px;}
+.font-22{font-size:22px;}
+.font-24{font-size:24px;}
+.font-26{font-size:26px;}
+.font-28{font-size:28px;}
+.font-30{font-size:30px;}
+.font-33{font-size:33px;}
+.font-35{font-size:35px;}
+.font-38{font-size:38px;}
+.font-40{font-size:40px;}
+.font-48{font-size:48px;}
+.font-50{font-size:50px;}
+.font-55{font-size:55px;}
+.font-58{font-size:58px;}
+.font-60{font-size:60px;}
+.font-65{font-size:65px;}
+.font-68{font-size:68px;}
+.font-75{font-size:75px;}
+.font-80{font-size:80px;}
+.font-103{font-size:103px;}
+.font-120{font-size:120px;}
+.font-149{font-size:149px;}
+.font-150{font-size:150px;}
+.font-200{font-size:200px;}
+
+/* test */
+.font-12-vw{font-size:.625vw;}
+.font-13-vw{font-size:.677vw;}
+.font-14-vw{font-size:.729vw;}
+.font-15-vw{font-size:.781vw;}
+.font-16-vw{font-size:.833vw;}
+.font-17-vw{font-size:.885vw;}
+.font-18-vw{font-size:.9375vw;}
+.font-19-vw{font-size:.989vw;}
+.font-20-vw{font-size:1.04vw;}
+.font-21-vw{font-size:1.093vw;}
+.font-22-vw{font-size:1.14vw;}
+.font-23-vw{font-size:1.197vw;}
+.font-24-vw{font-size:1.25vw;}
+.font-26-vw{font-size:1.354vw;}
+.font-28-vw{font-size:1.458vw;}
+.font-30-vw{font-size:1.5625vw;}
+.font-33-vw{font-size:1.71875vw;}
+.font-36-vw{font-size:1.875vw;}
+.font-38-vw{font-size:1.979vw;}
+.font-35-vw{font-size:1.822vw;}
+.font-40-vw{font-size:2.083vw;}
+.font-46-vw{font-size:2.395vw;}
+.font-48-vw{font-size:2.5vw;}
+.font-50-vw{font-size:2.6vw;}
+.font-55-vw{font-size:2.864vw;}
+.font-58-vw{font-size:3.02vw;}
+.font-60-vw{font-size:3.125vw;}
+.font-65-vw{font-size:3.3854vw;}
+.font-68-vw{font-size:3.541vw;}
+.font-75-vw{font-size:3.90625vw;}
+.font-80-vw{font-size:4.166vw;}
+.font-103-vw{font-size:5.364vw;}
+.font-120-vw{font-size:6.25vw;}
+.font-149-vw{font-size:7.7604vw;}
+.font-150-vw{font-size:7.8125vw;}
+.font-200-vw{font-size:10.416vw;}
+
+.font-montserrat-b{
+    font-family: 'playfair_regular',sans-serif;
+}
+
+/* 字体 */
+@font-face {
+    font-family: 'montserrat-regular';
+    src: url('../fonts/montserrat-regular-webfont.ttf');
+}
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('../fonts/montserrat-bold-webfont.ttf');
+}
+@font-face {
+    font-family: 'playfair_regular';
+    src: url('../fonts/playfair_display_regular.ttf');
+}
+@font-face{
+    font-family: 'playfair_bold';
+    src: url('../fonts/playfair_display_bold.ttf');
+}
+
+/*苹方-简 细体*/
+.default-font-light{font-family:PingFangSC-Light,sans-serif;}
+/*苹方-简 纤细体*/
+.default-font-thin{font-family:PingFangSC-Thin,sans-serif;}
+
+.font-mr{font-family:'montserrat-regular',sans-serif;}
+
+
+
+.border-top-1px, .border-right-1px, .border-bottom-1px, .border-left-1px {position:relative;}
+.border-top-1px::before, .border-bottom-1px::after, .border-left-1px::before, .border-right-1px::after {content: '';position:absolute;border:0 solid #ddd;-webkit-transform-origin:0 0;transform-origin: 0 0;}
+.border-top-1px::before, .border-bottom-1px::after {left:0;right:0;height:0;}
+.border-top-1px::before {top:0;}
+.border-left-1px::before, .border-right-1px::after{top:0;right:0;bottom:0;left:0;}
+.border-right-1px::after{-webkit-transform-origin:100% 0;transform-origin:100% 0;}
+.border-top-1px::before{border-top-width:1px;}
+.border-bottom-1px::after{bottom:0;border-bottom-width:1px;}
+.border-left-1px::before{border-left-width:1px;}
+.border-right-1px::after{border-right-width:1px;}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    .border-top-1px::before, .border-bottom-1px::after{-webkit-transform:scaleY(.67);transform:scaleY(.67);}
+    .border-left-1px::before, .border-right-1px::after{-webkit-transform:scaleX(.67);transform:scaleX(.67);}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .border-top-1px::before, .border-bottom-1px::after{-webkit-transform:scaleY(.5);transform:scaleY(.5);}
+    .border-left-1px::before, .border-right-1px::after{-webkit-transform:scaleX(.5);transform:scaleX(.5);}
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .border-top-1px::before, .border-bottom-1px::after{-webkit-transform:scaleY(.33);transform:scaleY(.33);}
+    .border-left-1px::before, .border-right-1px::after{-webkit-transform:scaleX(.33);transform:scaleX(.33);}
+}
